@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeon ni Deai</title>
+    <link rel="stylesheet" href="./style/style-danmachi-movie.css">
+    <link rel="shortcut icon" href="img/pageicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+      
+        <section class="main-content">
+            <div class="infoContents">
+                <div class="navLinks">
+                    <div class="linksHeader">                
+                        <a href="#" class="link actived">Home</a>
+                        <a href="#extraContent" class="link">Temporadas</a>
+                        <a href="https://danmachi.com/movie/character/" class="link" target="_blank">Personagens</a>
+                        <a href="https://en.danmemo.com/" class="link" target="_blank">Game</a>
+                    </div>
+    
+                    <div class="profile">
+                        <button id="menuBtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"><img src="./img/menu.png" alt="" id="menu-icon" width="60px"></button>
+                        <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                            <div class="offcanvas-header">
+                              <h5 class="offcanvas-title" id="staticBackdropLabel">MENU</h5>
+                              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                              <div>
+                                <div class="linksOffCanvas">                
+                                    <a href="#" class="linkOffCanvas actived" data-bs-dismiss="offcanvas" aria-label="Close">Home</a>
+                                    <a href="./index.html#tempsSec" class="linkOffCanvas">Temporadas</a>
+                                    <a href="#characterSec" class="linkOffCanvas">Personagens</a>
+                                    <a href="#" class="linkOffCanvas">Game</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                             
+                        
+                          <div class="notify">
+                            <div style="width: 30px;">
+                                <img src="./img/sinoicon.png" alt="" style="filter: invert() brightness(100);" width="30px" height="30px" id="sino-icon">
+                                <div class="cir"></div>
+                            </div>
+                            
+    
+                                <button id="picBtn" type="button" class="btn btn-secondary" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="-20,5"><div class="picture"></div></button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#">Perfil</a></li>
+                                    <li><a class="dropdown-item" href="#">Lista</a></li>
+                                    <li><a class="dropdown-item" href="#">Configurações</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Sair</a></li>
+                                  </ul>
+                          </div>
+            
+                        
+                        
+                    </div>
+                </div>
+    
+                <div class="animeDetails" data-aos="fade-right" data-aos-duration="1500">
+                    <img src="./img/logos/danmachilogomovie.png" alt="" id="danLogo">
+
+                    <h1 class="title-text" id="title4">Arrow of The Orion</h1>
+                    <img src="./img/ratingicon.png" alt="" width="100px" id="rating-icon">
+
+                    <p class="descriptionText">
+                        Ártemis se releva 
+                        para Bell dizendo que ele é o prometido para ajudá-la a derrotar uma perigosa criatura 
+                        que fica em um lugar distante da cidade onde ele vive. A partir dali o grupo de Bell 
+                        se junta com Hermes, responsável por gerenciar essa “missão”, para ajudar Ártemis em 
+                        sua aventura. <br>
+                    </p>
+
+                    <a style="font-weight: 800;" class="link" id="seeMore">Ver mais...</a>
+
+                    <button id="watchBtn">Assistir</button>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="extraContent" id="extraContent">
+            <div class="otherTemps">
+
+                    <h1 class="title-text otherTempsTitle" id="tempsSec">OUTRAS TEMPORADAS</h1>
+
+                <div class="temporadas" data-aos="fade-up" data-aos-duration="1500">
+                    <a href="index.html" class="temp1"></a>
+                    <a href="danmachi-s2.html" class="temp2"></a>
+                    <a href="danmachi-s3.html" class="temp3"></a>
+                    <a href="danmachi-s4.html" class="temp4"></a>
+                    <a href="danmachi-s0.html" class="temp5"></a>
+                </div>
+
+                <div class="footerTemps">              
+                     <img src="./img/movie_chara1.gif" alt="" id="gifChar">
+                     <p style="color: var(--terc-color); height: 50px; margin-bottom: 0;" class="descriptionText">© Fujino Omori / Danmachi Project © Felipe Buchioni</p>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>  
+</body>
+</html>

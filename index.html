@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeon ni Deai</title>
+    <link rel="stylesheet" href="./style/style-index.css">
+    <link rel="shortcut icon" href="img/pageicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+</head>
+<body>
+      
+        <section class="main-content">
+            <div class="infoContents">
+                <div class="navLinks">
+                    <div class="linksHeader">                
+                        <a href="#" class="link actived">Home</a>
+                        <a href="#extraContent" class="link">Temporadas</a>
+                        <a href="#characterSec" class="link">Personagens</a>
+                        <a href="https://en.danmemo.com/" class="link" target="_blank">Game</a>
+                    </div>
+    
+                    <div class="profile">
+                        <button id="menuBtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"><img src="./img/menu.png" alt="" id="menu-icon" width="60px"></button>
+                        <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                            <div class="offcanvas-header">
+                              <h5 class="offcanvas-title" id="staticBackdropLabel">MENU</h5>
+                              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                              <div>
+                                <div class="linksOffCanvas">                
+                                    <a href="#" class="linkOffCanvas actived" data-bs-dismiss="offcanvas" aria-label="Close">Home</a>
+                                    <a href="index.html#tempsSec" class="linkOffCanvas">Temporadas</a>
+                                    <a href="#characterSec" class="linkOffCanvas">Personagens</a>
+                                    <a href="https://en.danmemo.com/" class="linkOffCanvas">Game</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                             
+                        
+                          <div class="notify">
+                            <div style="width: 30px;">
+                                <img src="./img/sinoicon.png" alt="" style="filter: invert() brightness(100);" width="30px" height="30px" id="sino-icon">
+                                <div class="cir"></div>
+                            </div>
+                            
+    
+                                <button id="picBtn" type="button" class="btn btn-secondary" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="-20,5"><div class="picture"></div></button>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#">Perfil</a></li>
+                                    <li><a class="dropdown-item" href="#">Lista</a></li>
+                                    <li><a class="dropdown-item" href="#">Configurações</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Sair</a></li>
+                                  </ul>
+                          </div>
+            
+                        
+                        
+                    </div>
+                </div>
+    
+                <div class="animeDetails" data-aos="fade-right" data-aos-duration="1500">
+                    <img src="./img/logos/danmachilogo1.png" alt="" id="danLogo">
+
+                    <h1 class="title-text" id="title4">1 Temporada</h1>
+                    <img src="./img/ratingicon.png" alt="" width="100px" id="rating-icon">
+
+                    <p class="descriptionText">
+                        Acompanhamos a jornada de Bell Cranel, um jovem de 14 anos a serviço da deusa Héstia e
+                        único membro de sua Família. Ele se inspira na espadachim Ais Wallenstein, que um dia 
+                        salvou sua vida e por quem está apaixonado e parece não perceber que meio mundo acaba 
+                        tendo algum interesse nele, incluindo a própria Héstia. <br>
+                    </p>
+
+                    <a style="font-weight: 800;" class="link" id="seeMore">Ver mais...</a>
+
+                    <button id="watchBtn">Assistir</button>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="extraContent" id="extraContent">
+            <div class="otherTemps">
+
+                    <h1 class="title-text otherTempsTitle" id="tempsSec">OUTRAS TEMPORADAS</h1>
+
+                <div class="temporadas" data-aos="fade-up" data-aos-duration="1500">
+                    <a href="danmachi-s2.html" class="temp1"></a>
+                    <a href="danmachi-s3.html" class="temp2"></a>
+                    <a href="danmachi-s4.html" class="temp3"></a>
+                    <a href="danmachi-s0.html" class="temp4"></a>
+                    <a href="danmachi-movie.html" class="temp5"></a>
+                </div>
+
+                <div class="footerTemps">              
+                     <img src="./img/movie_chara1.gif" alt="" id="gifChar">
+                </div>
+            </div>
+        </section>
+
+        <section class="characters-content" id="characterSec">
+            <div class="characters">
+                <h1 class="title-text otherTempsTitle" id="charSec">PERSONAGENS</h1>
+
+                <div class="links">                
+                    <a href="#characterBell" class="link">BELL CRANEL</a>
+                    <a href="#characterHestia" class="link">HESTIA</a>
+                    <a href="#characterEina" class="link">EINA TULLE</a>
+                    <a href="#characterAiz" class="link">AIZ WALLENSTEIN</a>
+                    <a href="#characterLili" class="link">SYR FLOVA</a>
+                    <a href="#characterMikoto" class="link">LILIRUCA ARDE</a>
+                    <a href="#characterWelf" class="link">WELF CROZZO</a>
+                </div>
+
+                <div class="personagens">
+                    <div class="charDiv"  id="characterBell" data-aos="fade-right" data-aos-duration="1500"><img src="./img/characters-s1/characterBell.png" alt="" class="charInfo"></div>
+                    <div class="charDiv" id="characterHestia" data-aos="fade-left" data-aos-duration="1500"><img src="./img/characters-s1/characterHestia.png" alt="" class="charInfo"></div>
+                    <div class="charDiv" id="characterEina" data-aos="fade-right" data-aos-duration="1500"><img src="./img/characters-s1/characterEina.png" alt=""class="charInfo"></div>
+                    <div class="charDiv" id="characterAiz"data-aos="fade-left" data-aos-duration="1500"><img src="./img/characters-s1/characterAiz.png" alt="" class="charInfo"></div>
+                    <div class="charDiv" id="characterSyr" data-aos="fade-right" data-aos-duration="1500"><img src="./img/characters-s1/characterSyr.png" alt="" class="charInfo"></div>
+                    <div class="charDiv" id="characterLili" data-aos="fade-left" data-aos-duration="1500"><img src="./img/characters-s1/characterLili.png" alt="" class="charInfo"></div>
+                    <div class="charDiv" id="characterWelf" data-aos="fade-right" data-aos-duration="1500"><img src="./img/characters-s1/characterWelf.png" alt="" class="charInfo characterRyuu"></div>
+                    <a href="#characterSec" class="title-text otherTempsTitle backTop">VOLTAR PARA O TOPO</a>
+                </div>
+            </div>
+
+                    <footer>
+            <p style="color: var(--terc-color);" class="descriptionText">© Fujino Omori / Danmachi Project © Felipe Buchioni</p>
+        </footer>
+        </section>
+
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
+</body>
+</html>

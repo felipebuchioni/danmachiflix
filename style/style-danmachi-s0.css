@@ -1,0 +1,729 @@
+:root{
+    --primary-color: #4c569e;
+    --secundary-color: #1c4ba5;
+    --terc-color: #d7dcff;
+}
+
+*{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.linkOffCanvas{
+    display: none;
+}
+
+.cir{
+    width: 10px; 
+    height: 10px; 
+    background-color: red; 
+    position: absolute; 
+    top: 40px; 
+    right: 296px; 
+    border-radius: 100%;
+}
+
+.main-content{
+    width: 100vw;
+    height: 1000px;
+    background-image: url(../img/backgrounds/bg-season0.jpg);
+    background-position: 200px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.infoContents{
+    padding: 0px 150px;
+    position: absolute;
+    width: 100vw;
+    height: 1000px;
+    background-image: linear-gradient(to right, black 15%, transparent 100%);
+}
+
+.navLinks{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.linksHeader{
+
+    display: flex;
+    gap: 50px;
+
+}
+
+.linksOffCanvas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.linkOffCanvas{
+    padding: 0px 15px;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    font-size: 20pt;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.linkOffCanvas:hover{
+    background-color: rgb(32, 32, 32);
+}
+
+
+.links{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+    font-size: 20pt;
+    cursor: pointer;
+}
+
+.actived{
+    color:var(--primary-color);
+}
+
+
+.link:hover{
+    color: rgb(189, 189, 189);
+}
+
+.actived:hover{
+    color: var(--secundary-color);
+}
+
+.profile{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.picture{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 100%;
+    background-image: url(../img/bellcranelicon.png);
+    background-size: cover;
+    border: 3px solid white;
+}
+
+#danLogo{
+    width:700px;
+    padding-right: 0px;
+}
+
+#menu-icon{
+    filter: invert();
+    display: none;
+}
+
+#menuBtn{
+    background-color: transparent;
+    border: none;
+}
+
+#picBtn{
+    background-color: transparent;
+    border: none;
+}
+
+#sinoBtn{
+    background-color: transparent;
+    border: none;
+}
+
+#menuBtn:hover{
+
+    filter: opacity(80%);
+}
+
+#staticBackdrop{
+    background-color: rgb(49, 49, 49);
+    color: white;
+}
+
+#staticBackdropLabel{
+    font-size: 28pt;
+    color: var(--primary-color);
+}
+
+.animeDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.title-text{
+    color: white;
+    font-size: 28pt;
+}
+
+.otherTempsTitle{
+    color: var(--primary-color);
+    font-size: 48pt;
+    font-weight: 800;
+    margin: 0;
+}
+
+.descriptionText{
+    font-size: 16pt;
+    width: 700px;
+    color: white;
+}
+
+#watchBtn{
+    background-color: var(--primary-color);
+    padding: 10px 65px;
+    color: white;
+    font-size: 20pt;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+#watchBtn:hover{
+    background-color: var(--secundary-color);
+}
+
+.extraContent{
+    border-top:6px solid var(--primary-color);
+    border-bottom: 6px solid var(--primary-color);
+    background-image: url(../img/bg-img.png);
+}
+
+.otherTemps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:50px;
+    gap: 40px 0px;
+}
+
+.headerTemps{
+    display: flex;
+    align-items: center;
+    gap: 0px 200px;
+}
+
+.temporadas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px 0px;
+    padding: 0px 50px;
+}
+
+.temp1{
+    background-color: transparent;
+    width: 400px;
+    height: 500px;
+    background-image: url(../img/capas/temp1.jpg);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 25px;
+    border: none;
+    transition: 0.5s;
+}
+
+.temp1:hover{
+    background-size: 330px;
+}
+
+.temp2{
+    background-color: transparent;
+    width: 400px;
+    height: 500px;
+    background-image: url(../img/capas/temp2.jpg);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 25px;
+    border: none;
+    transition: 0.5s;
+}
+
+.temp2:hover{
+    background-size: 330px;
+}
+
+.temp3{
+    background-color: transparent;
+    width: 400px;
+    height: 500px;
+    background-image: url(../img/capas/temp3.jpg);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 25px;
+    border: none;
+    transition: 0.5s;
+}
+
+.temp3:hover{
+    background-size: 330px;
+}
+
+.temp4{
+    background-color: transparent;
+    width: 400px;
+    height: 500px;
+    background-image: url(../img/capas/temp4.jpg);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 25px;
+    border: none;
+    transition: 0.5s;
+}
+
+.temp4:hover{
+    background-size: 330px;
+}
+
+.temp5{
+    background-color: transparent;
+    width: 400px;
+    height: 500px;
+    background-image: url(../img/capas/movie.jpg);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 25px;
+    border: none;
+    transition: 0.5s;
+}
+
+.temp5:hover{
+    background-size: 330px;
+}
+
+.footerTemps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 180px;
+    background-image: url(../img/footerbg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#gifChar{
+    width: 100px;
+}
+
+.characters-content{
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.characters{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.personagens{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.charInfo{
+    width: 950px;
+}
+
+.charDiv{
+    height: 800px;
+    display: flex;
+    align-items: center;
+}
+
+#charSec{
+   color: var(--terc-color); 
+}
+
+.btn-close{
+    background-color: white;
+    color: white;
+}
+
+.notify{
+    width: 100%;
+    gap: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+@media(min-width: 2560px) {
+    .main-content{
+        height: 1000px;
+        background-image: url(../img/backgrounds/bg-season0.2.jpg);
+        background-size: cover;
+        background-position: 100px 0px;;
+    }
+
+    .infoContents{
+        background-image: linear-gradient(to right, black 25%, transparent 100%);
+        
+    }
+
+    .personagens{
+        gap: 0px;
+    }
+
+    .charDiv{
+        height: 900px;
+    }
+
+
+}
+
+@media(max-width: 1275px) {
+
+    .cir{
+        position: relative;
+        right: -20px;
+        top: -30px;
+    }
+
+    .main-content{
+        background-position: 150px 0px;
+    }
+
+    .navLinks{
+        flex-direction: column-reverse;
+        height: 200px;
+        gap: 0;
+    }
+
+    .picture{
+        width: 100px;
+        height: 100px;
+    }
+
+    .temporadas{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .charInfo{
+        width: 900px;
+    }
+
+    .descriptionText{
+        font-size: 14pt;
+        margin: 0
+        ;
+    }
+}
+
+@media (max-width: 1025px) {
+    .main-content{
+        background-position: -20px 0px;
+    }
+    #danLogo{
+        width: 600px;
+
+    }
+
+    .link{
+        font-size: 18pt;
+    }
+
+    .descriptionText{
+        width: 480px;
+        text-align: center;
+    }
+
+    .animeDetails{
+        justify-content: center;
+        align-items: center;
+    }
+
+    #title4{
+        display: none;
+    }
+
+    .charInfo{
+        width: 800px;
+    }
+
+    .descriptionText{
+        font-size: 14pt;
+    }
+
+}
+
+@media(max-width: 970px){
+
+    #danLogo{
+        width: 600px;
+
+    }
+    .navLinks{
+        margin-top: 0px;
+    }
+    .linksHeader{
+        display: none;
+    }
+
+    .links{
+        display: none;
+    }
+
+    #menu-icon{
+        display: flex;
+    }
+
+    .infoContents{
+        padding: 0px 50px;
+    }
+
+    .otherTempsTitle{
+        font-size: 30pt;
+    }
+
+    .charInfo{
+        width: 700px;
+    }
+
+    .profile{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .notify{
+        width: 200px;
+    }
+}
+
+@media(max-width: 750px){
+    .infoContents{
+        padding: 0;
+    }
+    
+    .main-content{
+        background-position: -350px;
+    }
+    #danLogo{
+        width: 500px;
+        margin-top: 300px;
+    }
+
+    .descriptionText{
+        display: none;
+    }
+
+    #seeMore{
+        display: none;
+    }
+
+    #rating-icon{
+        margin-bottom: 20px;
+    }
+
+    .charDiv{
+        height: auto;
+    }
+
+    .charInfo{
+        width: 550px;
+    }
+
+
+    .personagens{
+        gap: 100px;
+    }
+
+    .profile{
+        padding: 0px 40px;
+    }
+
+    #picBtn{
+        padding: 0;
+    }
+}
+
+@media(max-width: 600px) {
+
+    #menu-icon{
+        width: 40px;
+    }
+
+    .charInfo{
+        width: 450px;
+    }
+
+        .otherTempsTitle{
+        font-size: 26pt;
+    }
+
+    .personagens{
+        gap: 100px;
+    }
+
+    .characters{
+        gap: 50px;
+    }
+
+}
+
+@media(max-width: 480px) {
+    .navLinks{
+        height: 120px;
+    }
+
+    .picture{
+        width: 80px;
+        height: 80px;
+    }
+
+    #danLogo{
+        width: 400px;
+        margin-top: 400px;
+    }
+
+    .main-content{
+        background-position: -550px 0px;
+    }
+
+    .infoContents{
+    background-image: linear-gradient(to right, black 2%, transparent 100%);
+}
+
+.charInfo{
+    width: 400px;
+}
+
+.notify{
+    width: 150px;
+}
+
+
+}
+
+@media(max-width: 450px) {
+    .otherTempsTitle{
+        font-size: 20pt;
+    }
+
+    #danLogo{
+        width: 350px;
+    }
+
+    .charInfo{
+        width: 350px;
+    }
+
+
+}
+
+@media(max-width: 375px){
+    .otherTempsTitle{
+        font-size: 16pt;
+    }
+    .temporadas{
+        gap: 10px;
+    }
+
+    .temp1{
+        background-size: 250px;
+        width: 300px;
+        height: 400px;
+    }
+
+    .temp1:hover{
+        background-size: 270px;
+    }
+
+        .temp2{
+        background-size: 250px;
+        width: 300px;
+        height: 400px;
+    }
+
+    .temp2:hover{
+        background-size: 270px;
+    }
+
+        .temp3{
+        background-size: 250px;
+        width: 300px;
+        height: 400px;
+    }
+
+    .temp3:hover{
+        background-size: 270px;
+    }
+
+    .temp4{
+        background-size: 250px;
+        width: 300px;
+        height: 400px;
+    }
+
+    .temp4:hover{
+        background-size: 270px;
+    }
+
+    .temp5{
+        background-size: 250px;
+        width: 300px;
+        height: 400px;
+    }
+
+    .temp5:hover{
+        background-size: 270px;
+    }
+
+    .charInfo{
+        width: 300px;
+    }
+}
